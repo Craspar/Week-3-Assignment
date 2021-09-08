@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Written by Christopher Beck for Jason Banahan's ACSG 540 course-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Week 3 Assignment</title>
+
+</head>
+
+<body>
+    <h1>Exercise 2.14</h1>
+
+    <h3>Please take this opportunity to fill out the following form!</h3> <br>
+
+    <form method="GET" action="http://acsg540.com/~ubuntu/acsg-540-2021f-examples/week3/list_data.php">
+        <!-- A text box to collect the user's name -->
+
+        <p>Enter your full name:</p>
+
+        <label for ="fullname"><b>Full Name:</b></label>
+        <input id = "fullname" name = "fullname" type = "text"><br>
+
+        <!-- Four checkboxes, one each for the following items: i. Four 25-watt light bulbs for $2.39 ii. Eight 25-watt light bulbs for $4.29 iii. Four 25-watt long-life light bulbs for $3.95 iv. Eight 25-watt long-life light bulbs for $7.49-->
+
+        <p>Select which set of light bulbs you would like to purchase:</p>
+        
+        <label> <input type = "checkbox" name = "bulbtype[]" value = "Four25WBulbs" />Four 25-watt light bulbs - $2.39</label><br>
+        <label> <input type = "checkbox" name = "bulbtype[]" value = "Eight25WBulbs" />Eight 25-watt light bulbs - $4.29</label><br>   
+        <label> <input type = "checkbox" name = "bulbtype[]" value = "Four25WLLBulbs" />Four 25-watt long-life light bulbs - $3.95</label><br>
+        <label> <input type = "checkbox" name = "bulbtype[]" value = "EightW25LLBulbs" />Eight 25-watt long-life light bulbs - $7.49</label><br>
+
+        <!-- A collection of three radio buttons that are labeled as follows: i Visa ii. Master Card iii. Discover-->
+
+        <p>Select your preferred payment type:</p>
+
+        <label><input type = "radio" name = "creditcard" value = "visa" />Visa</label><br>
+        <label><input type = "radio" name = "creditcard" value = "mstc" />Master Card</label><br>
+        <label><input type = "radio" name = "creditcard" value = "dcvr" />Discover</label><br>
+
+        <!-- Add a Submit and Reset button to the form-->
+
+        <input type = "submit" value="Submit Form" />
+        <input type = "reset" value = "Reset Form" /> 
+
+
+    </form>
+
+</body>
+
+</html>
